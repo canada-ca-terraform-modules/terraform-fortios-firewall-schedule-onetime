@@ -26,7 +26,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_onetime_schedules"></a> [onetime\_schedules](#input\_onetime\_schedules) | List of onetime schedules | map(object()) | n/a | yes |
+| <a name="input_onetime_schedules"></a> [onetime\_schedules](#input\_onetime\_schedules) | List of onetime schedules | `map(object())` | n/a | yes |
 
 ## Outputs
 
