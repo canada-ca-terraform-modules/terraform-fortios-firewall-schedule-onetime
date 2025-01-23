@@ -4,7 +4,7 @@
 module "onetime_schedules" {
   source = "https://github.com/canada-ca-terraform-modules/terraform-fortios-firewall-schedule-onetime"
   providers = {
-    fortios = fortios.fgintcc
+    fortios = fortios.myalias
   }
 
   onetime_schedules = {
