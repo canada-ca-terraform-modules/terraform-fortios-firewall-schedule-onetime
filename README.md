@@ -1,4 +1,21 @@
 <!-- BEGIN_TF_DOCS -->
+## Usage
+```hcl
+module "onetime_schedules" {
+  source = "https://github.com/canada-ca-terraform-modules/terraform-fortios-firewall-schedule-onetime"
+  providers = {
+    fortios = fortios.fgintcc
+  }
+
+  onetime_schedules = {
+    my_schedule = {
+      start           = "07:00 2024/06/18"
+      end             = "21:00 2024/08/31"
+      expiration_days = 3 #Log entry will be generated 3 days before expiry
+    },
+  }
+}
+```
 ## Requirements
 
 | Name | Version |
